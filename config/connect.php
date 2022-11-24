@@ -9,8 +9,8 @@
  */
 
 define('HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', '');
+define('USER', 'admin');
+define('PASSWORD', 'admin');
 define('DATABASE', 'sellPC');
 
 /*
