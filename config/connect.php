@@ -8,7 +8,7 @@
  * DATABASE - название базы данных, к которой мы подключаемся
  */
 
-define('HOST', 'localhost');
+define('HOST', 'alexpc.netlify.app');
 define('USER', 'admin');
 define('PASSWORD', 'admin');
 define('DATABASE', 'sellPC');
