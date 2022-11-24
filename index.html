@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" href="cssmain.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин компьютеров ALEXPC</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<header>
+    <nav class="container">
+      <a class="logo" href="index.html">
+        <span>A</span>
+		<span>L</span>
+        <span>E</span>
+		<span>X</span>
+        <span>P</span>
+        <span>C</span>
+      </a>
+	<div class="nav-toggle"><span></span>
+	
+	</div>
+      <ul id="menu">
+        <li><a href="PCs.html">Компьютеры</a></li>
+        <li><a href="help.html">Поддержка</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </nav>
+</header>
+
+<body>
+<div class="container">
+  <div class="posts-list">
+    <article id="post-1" class="post">
+      <div class="post-image"><a href=""><img src="images/PC1.png"></a></div>
+      <div class="post-content">
+        <div class="category"><a href="">Сборка пк</a></div>
+        <h2 class="post-title">Компьютеры под любой бюджет!</h2>
+        <p>Данный магазин предоставляет собранные компьютеры и услуги к ним. Предлагаем ознокомиться с асортиментом в меню и с услугами ниже по ссылке </p>
+        <div class="post-footer">
+          <a class="more-link" href="help.html">Если у вас вопрос нажмите сюда</a>
+          <div class="post-social">
+            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="post-2" class="post">
+      ...
+    </article>
+  </div> <!-- конец div class="posts-list"-->
+  <aside>
+  <div class="widget">
+    <h3 class="widget-title">Популярные сборки</h3>
+    <ul class="widget-category-list">
+      <li><a href="PCs.html">Сборка компьютера за 30 000 рублей</a></li>
+      <li><a href="PCs.html">Сборка компьютера за 50 000 рублей</a></li>
+      <li><a href="PCs.html">Сборка компьютера за 70 000 рублей</a></li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h3 class="widget-title">Частые вопросы</h3>
+    <ul class="widget-posts-list">
+      <li>
+        <div class="post-image-small">
+        </div>
+		<a href="FAQ.html"><h4  class="widget-post-title" >Какие у вас офицальные партнёры?</h4></a>
+      </li>
+      <li>
+        <div class="post-image-small">
+        </div>
+		<a href="FAQ.html"><h4 class="widget-post-title">Какую гарантию вы даёте на компьютеры?</h4></a>
+      </li>
+      <li>
+        <div class="post-image-small">
+        </div>
+		
+        <a href="FAQ.html"><h4 class="widget-post-title">Какие предоставляете услуги?</h4></a>
+      </li>
+    </ul>
+  </div>
+</aside>
+</div> <!-- конец div class="container"-->
+<footer>
+  <div class="container">
+    <div class="footer-col"><span>Магазин по сборкик компьютеров ALEXPC</span></div>
+    <div class="footer-col">
+      <div class="social-bar-wrap">
+        <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <a href="mailto:ALEXPC@mail.ru">Написать письмо</a>
+    </div>
+  </div>
+</footer>
+<script>
+$('.nav-toggle').on('click', function(){
+$('#menu').toggleClass('active');
+});
+</script>
+</body>
+</html>

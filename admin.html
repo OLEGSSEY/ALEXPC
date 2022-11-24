@@ -1,0 +1,124 @@
+<html>
+<head>
+  <link rel="stylesheet" href="cssmain.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Админ панель ALEXPC</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<header>
+    <nav class="container">
+      <a class="logo" href="">
+        <span>A</span>
+		<span>L</span>
+        <span>E</span>
+		<span>X</span>
+        <span>P</span>
+        <span>C</span>
+      </a>
+      <div class="nav-toggle"><span></span></div>
+      <form action="" method="get" id="searchform">
+        <input type="text" placeholder="Искать на сайте...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <ul id="menu">
+        <li><a href="">Компьютеры</a></li>
+        <li><a href="">Поддержка</a></li>
+        <li><a href="">Доставка</a></li>
+      </ul>
+		<div class ='autorisation'>
+			<p>Авторизация:</p>
+			<form action="adminavt.php" method="post">
+			<input name="login" placeholder="Логин">
+			<input type="password" name="password" placeholder="Пароль">
+			<input type="submit" value="Войти">
+			<?php
+			header('Content-type: text/html; charset=utf-8');
+			$login = $_POST['login'];
+			$pas = $_POST['password'];
+			if ($login == 'admin' && $pas == admin)
+			  {
+			  session_start();
+			  $_SESSION['admin'] = true;
+			  $script = 'adminpanel.php';
+			  }
+			else
+			$script = 'avtadministrator.html';
+			header("Location: $script");
+			?>
+			</form>
+		</div>
+	</nav>
+</header>
+
+<div class="container">
+  <div class="posts-list">
+    <article id="post-1" class="post">
+      <div class="post-image"><a href=""><img src="images/PC1.png"></a></div>
+      <div class="post-content">
+        <div class="category"><a href="">Сборка пк</a></div>
+        <h2 class="post-title">Компьютеры под любой бюджет!</h2>
+        <p>Данный магазин предоставляет собранные компьютеры и услуги к ним. Предлагаем ознокомиться с асортиментом в меню и с услугами ниже по ссылке </p>
+        <div class="post-footer">
+          <a class="more-link" href="">Подробнее об услугах</a>
+          <div class="post-social">
+            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="post-2" class="post">
+      ...
+    </article>
+  </div> <!-- конец div class="posts-list"-->
+  <aside>
+  <div class="widget">
+    <h3 class="widget-title">Популярные сборки</h3>
+    <ul class="widget-category-list">
+      <li><a href="">Сборка компьютера за 30 000 рублей</a></li>
+      <li><a href="">Сборка компьютера за 50 000 рублей</a></li>
+      <li><a href="">Сборка компьютера за 70 000 рублей</a></li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h3 class="widget-title">Частые вопросы</h3>
+    <ul class="widget-posts-list">
+      <li>
+        <div class="post-image-small">
+        </div>
+		<a href=""></a>
+        <h4  class="widget-post-title">Какие у вас офицальные партнёры?</h4>
+      </li>
+      <li>
+        <div class="post-image-small">
+        </div>
+		<a href=""></a>
+        <h4 class="widget-post-title">Какую гарантию вы даёте на компьютеры?</h4>
+      </li>
+      <li>
+        <div class="post-image-small">
+        </div>
+		<a href=""></a>
+        <h4 class="widget-post-title">Какие предоставляете услуги?</h4>
+      </li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h3 class="widget-title">Подписка на рассылку</h3>
+    <form action="" method="post" id="subscribe">
+      <input type="email" name="email" placeholder="Ваш email" required>
+      <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+    </form>
+  </div>
+</aside>
+</div> <!-- конец div class="container"-->
+
+<body>
+
+</html>
