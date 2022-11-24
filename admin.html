@@ -1,4 +1,11 @@
 <html>
+<?php
+
+require_once 'config/connect.php';
+$connect = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
+if (!$connect) {
+    die('Error connect to database!');
+?>
 <head>
   <link rel="stylesheet" href="cssmain.css">
   <meta charset="utf-8">
